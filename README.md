@@ -11,3 +11,7 @@ Ce projet nécessite de télécharger la base de données **SQL** et d'être ouv
 
 ## My Spotify
 Ce projet nécessite d'avoir **Docker** et faire la commande "npm run start" dans la console. Cette dernière ouvrira automatiquement un onglet sur le navigateur.
+
+## Mon App
+Ce projet s'ouvre avec XCode.
+J'ai codé cette application pour expérimenter le langage Swift et le logiciel XCode.
