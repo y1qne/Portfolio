@@ -1,0 +1,104 @@
+.carousel{
+    background-color: #cff;
+    border-top: black solid 1px; 
+    padding-top: 25px;  
+}
+
+.carousel_img{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+#images {
+    width:100%;
+    height:auto;
+    /* justify-self: center; */
+}
+
+.fleches{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 5px;
+    padding-right: 5px;
+    height: 50px;
+    position: relative;
+    top: -176px;
+}
+
+.gauche{
+    background: url(png/2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45px;
+    width: 45px;
+}
+
+.droite{
+    background: url(png/2.png) -45px 0px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 45px;
+    width: 45px;
+}
+
+.bande{
+    position: relative;
+    top: -42px;
+    background: rgba(0, 0, 0, 0.3); /* instead of opacity so only the background is transparent */
+    height: 42px;
+}
+
+.bande>p{
+    position: relative;
+    top: 25%;
+    left: 20px;
+    color: white
+}
+
+.dots{
+    display:flex;
+    justify-content: center;
+    gap:10px;
+    position: relative;
+    top: -45px;
+}
+
+.dot{
+    background-image: url(png/1.png);
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+}
+
+.dot:hover{
+    background-image: url(png/1.png);
+    background-position: 0px -30px !important;
+    background-repeat: no-repeat;
+    height: 25px;
+    width: 25px;
+}
+
+@media (max-width: 847px) {
+    .bande{
+        display: none;
+    }
+    .dots{
+        top: -25px;
+    }
+    .fleches{
+        top: -176px;
+    }
+}
+
+@media (max-width:614px){
+    .fleches{
+        top: -105px;
+    }
+}
+
+@media (max-width:305px){
+    .fleches{
+        top: -82px;
+    }
+}

@@ -1,0 +1,15 @@
+Options +FollowSymlinks
+RewriteEngine on
+RewriteRule ^logout$  controllers/logout.controller.php [L]
+RewriteRule ^account$  views/view_my_account.php [L]
+RewriteRule ^search$  controllers/search.controller.php [L]
+RewriteRule ^edit$ views/view_edit_profil.php [L]
+RewriteRule ^home$  views/view_timeline.php [L]
+RewriteRule ^trending$  views/view_trending.php [L]
+RewriteRule ^follow$  views/view_follow.php [L]
+RewriteRule ^conversations$  views/view_liste_conversations.php [L]
+RewriteRule ^conversation$  views/view_messages.php [L]
+RewriteRule ^conversation_new$  controllers/send_message.controller.php [L]
+RewriteRule ^new_group$  views/view_new_group.php [L]
+RewriteRule ^@([a-zA-Z0-9_-]+)$ views/view_profil.php?pseudo=$1 [L]
+RewriteRule ^([a-zA-Z0-9_-]+)$ views/view_hashtag.php?hashtag=$1 [L,NE]

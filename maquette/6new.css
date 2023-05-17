@@ -1,0 +1,28 @@
+.footer{
+    background-color : #9a99ff;
+    padding-top: 25px;
+    padding-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.listefooter{
+    display: flex; 
+    flex-wrap: wrap;
+    column-gap: 40px;
+    row-gap: 10px;
+    position: relative;
+    left: -40px;
+}
+.listefooter > li{
+    display: inline-block;
+    font-size: 13px;
+    font-weight: bold;
+}
+
+.copyright{
+    color:gray;
+    padding-top: 25px;
+    padding-bottom: 40px;
+    font-size: 10px
+}

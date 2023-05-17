@@ -1,0 +1,81 @@
+.articlesetdrapeaux{
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+.articles, .destinations{
+    display : flex;
+}
+
+.entete{
+    background-color : hsl(241, 100%, 80%);
+    display: flex;
+    gap:10px;
+    color: white;    
+    padding: 10px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+}
+.textearticle{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    color: gray;
+    font-size: 11px;
+    line-height: 1.5;
+}
+.article>h4{
+    padding-bottom: 15px;
+    font-size: 19px;
+}
+#more{
+    color:#df3f39;
+}
+
+.articles{
+    padding-bottom: 40px;
+    column-gap: 15px;
+}
+
+.destinations{
+    padding-top: 30px;
+    border-top: lightgray solid 1px;
+    display : flex;
+    column-gap: 35px;
+}
+.drapeau{
+    border: 1px solid lightgrey;
+    border-radius: 5px;
+    padding: 5px;
+    width: 100%;
+}
+.drapeaux>p{
+    font-size: 15px;
+    font-weight: bold;
+    padding-top: 10px;
+}
+
+.drapeaux{
+    width: calc(100%/3);
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+@media (max-width:614px){
+    .articles{
+        display : flex;
+        flex-direction: column;
+    }
+    .drapeaux{
+        justify-content:center;
+        width: 100%;
+        padding-right: -5px;
+    }
+    .drapeau{
+        position: relative;
+        left:-6px;
+    }
+    
+    #brazil, #algeria{
+        display: none;
+    }
+}

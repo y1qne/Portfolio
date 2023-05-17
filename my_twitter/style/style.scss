@@ -1,0 +1,130 @@
+body {
+    background-color: #212121;
+    opacity: 1;
+    background-image: linear-gradient(#ff2171 0.7000000000000001px, transparent 0.7000000000000001px), linear-gradient(to right, #ff2171 0.7000000000000001px, #212121 0.7000000000000001px);
+    background-size: 14px 14px;
+}
+
+.gradient-custom-2 {
+    /* fallback for old browsers */
+    background: #fccb90;
+
+    /* Chrome 10-25, Safari 5.1-6 */
+    background: -webkit-linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+
+    /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    background: linear-gradient(to right, #ee7724, #d8363a, #dd3675, #b44593);
+}
+
+@media (min-width: 768px) {
+    .gradient-form {
+        height: 100vh !important;
+    }
+}
+
+@media (min-width: 769px) {
+    .gradient-custom-2 {
+        border-top-right-radius: .3rem;
+        border-bottom-right-radius: .3rem;
+    }
+}
+
+.card {
+    background-color: #1a1a1a !important;
+    color: #fff !important;
+    box-shadow: 1px 4px 5px black !important;
+}
+
+.card-body {
+    border-top: 1px dashed #ff2278 !important;
+}
+
+
+.tweet_int {
+    background-color: #ff2278;
+    border: 0px;
+    padding: 5px;
+    border-radius: 5px;
+    color: #fff;
+    font-weight: bold;
+}
+
+
+.navbar.navbar-expand-lg.navbar-dark.bg-dark {
+    margin-bottom: 50px;
+}
+
+.tweet_int_row {
+    justify-content: center;
+    align-content: center;
+    align-items: center;
+}
+
+.tweet_int {
+    margin-right: 10px;
+}
+
+.dropdown-menu {
+    right: 0px;
+}
+
+.nav-item {
+    width: calc(100%/4);
+}
+
+.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    width: 100%;
+    text-align: center;
+}
+
+.nav-item {
+    width: calc(100%/4);
+}
+
+.navbar-nav.me-auto.mb-2.mb-lg-0 {
+    width: 100%;
+    text-align: center;
+    font-weight: bold;
+    text-transform: uppercase;
+}
+
+.btn,
+.form-control.me-2 {
+    background-color: #0f0e0e !important;
+    border-color: #0f0e0e !important;
+    color: #fff !important;
+}
+
+.form-control.me-2::placeholder {
+    color: grey;
+}
+
+.width-theme-pronouns-birthdate {
+  width: 105px;
+}
+
+.width-pseudo-alias-location {
+  width: 140px;
+}
+
+.btn-submit-edit {
+  width: 75px;
+  margin-top: 25px;
+}
+
+.width-bio {
+  height: 100px;
+  width: 500px;
+}
+
+.width-email {
+  width: 200px;
+}
+
+.center-edit {
+  align-items: center;
+}
+
+.padding-edit {
+  padding-top: 20px;
+}

@@ -1,0 +1,32 @@
+#contenaire{
+    padding-right: 350px;
+    padding-left: 350px;
+    border-top: black solid 1px;
+}
+
+*{
+    margin : 0;
+    font-family: sans-serif;
+}
+
+@media (max-width: 847px) {
+    #contenaire{
+        padding-right: 50px;
+        padding-left: 50px;
+    }
+}
+
+@media (max-width:614px){
+    #contenaire{
+        padding-right: 97px;
+        padding-left: 97px;
+    }
+    
+}
+
+@media (max-width:305px){
+    #contenaire{
+        padding-right: 3px;
+        padding-left: 3px;
+    }
+}

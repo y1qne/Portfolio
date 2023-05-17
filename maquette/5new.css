@@ -1,0 +1,77 @@
+.about{
+    background-color: #cff;
+    display:flex;
+    padding-top: 40px;
+    padding-bottom: 70px;
+    flex-direction: column;
+    row-gap: 20px;
+}
+
+.titre{
+    border-bottom: lightgray solid 1px;
+    font-size: 26px;
+    font-weight: lighter;
+    padding-bottom: 15px;
+}
+.howto>.titre{
+    font-size: 20px;
+    padding-bottom: 5px;
+}
+.lorem{
+    font-size: 13px;
+    color: gray;
+    line-height: 1.5;
+}
+
+
+.firstline{
+    display: flex;
+    gap: 25px;
+}
+.imageboussole{
+    max-width: 98px;
+    max-height: 103px;
+}
+.imagecarte{
+    max-width: 113px;
+    max-height: 94px;
+}
+.imagevelo{
+    max-width: 108px;
+    max-height: 73px;
+}
+.boussole, .carte, .velo{
+    display: flex;
+    gap:15px;
+}
+
+.whyus, .aboutus, .howto{
+    display:flex;
+    flex-direction: column;
+    gap:15px;
+}
+.whyus, .aboutus{
+    width:50%;
+}
+
+.howto>button{
+    margin-top: 5px;
+    width:fit-content;
+    font-size: 16px;
+    color:white;
+    background-color:#84af6e;
+    padding: 10px 20px;
+    border-radius: 4px;
+}
+
+
+@media (max-width:614px){
+    .firstline{
+        display: flex;
+        flex-direction: column;
+        row-gap: 25px;
+    }
+    .whyus, .aboutus{
+        width:unset;
+    }
+}

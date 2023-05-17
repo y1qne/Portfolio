@@ -1,0 +1,157 @@
+.navbar{
+    background-color : #9a99ff;
+    border-top: black solid 1px;
+
+    display : flex;
+    padding-top: 30px;
+    padding-bottom: 30px;
+
+    font-size:14px;
+}
+
+.logo{
+    height: 55px;
+    width: 240px;
+    background: url(png/18.jpg.png) -17px -16px;
+    background-size: 268px 82px;
+    background-repeat: no-repeat;
+}
+
+/* arrows */
+.btn i{
+    border: solid white;
+    border-width: 0 2px 2px 0;
+    display: inline-block;
+    padding: 3px;
+    transform: rotate(45deg);
+    position: relative;
+    left: 10px;
+    top:-2px;
+}
+
+/* buttons appearance to match a*/
+.btn{
+    font-size: 14.5px;
+    border: none;
+    outline: none;
+    color: inherit;
+    background-color: inherit;
+    text-align: left;
+}
+
+/* hide dropdown menu */
+.btn-content{
+    display: none;
+    position: absolute; /*dropdown over the rest/*
+    /* z-index: 1; /* kinda useless*/
+}
+
+/* style dropdow menu */
+.menubtn:hover .btn-content{
+    display: block;
+    background-color: #cccccc;
+    margin-left: -15px; /**/
+}
+.btn-content > div {
+    display: block;
+    float: none;
+    text-align: left;
+    padding: 9px 30px;
+    border-bottom: black solid 1px;
+}
+.btn-content div:hover {
+    background-color: white;
+    color:red;
+}
+
+@media (min-width: 1250px){
+    .navbar{
+        justify-content: space-between;
+    }
+    .navmenu, .menubtns{
+        display: flex;
+        gap:25px
+    }
+    .menubtn:hover .btn-content{
+        margin-left: 5px; /**/
+    }
+    .btn-content > div {
+        padding: 9px 25px 9px 15px;
+    } 
+}
+
+@media (max-width: 1250px) {
+    .navbar{
+        justify-content: space-between;
+    }
+    .navmenu, .menubtns{
+        display: flex;
+        gap:25px
+    }
+    .menubtn:hover .btn-content{
+        margin-left: 5px; /**/
+    }
+    .btn-content > div {
+        padding: 9px 25px 9px 15px;
+    }
+}
+
+@media (max-width: 847px) {
+    .navbar{
+        flex-direction: column;
+        row-gap: 15px;
+    }
+}
+
+@media (max-width:614px){
+    .logo{
+        margin: auto; /*center a div*/
+    }
+    .navmenu{
+        display: flex;
+        flex-direction: column ;
+        row-gap: unset;
+    }
+    #menuname {
+        padding-left:20px;
+        /* borders */
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-top: lightgray solid 1px;
+    }
+    #menuname:hover, .btn:hover{
+        color:red;
+    }
+    .menubtns{
+        display: flex;
+        flex-direction: column;
+        gap:unset; /* unwanted gap */
+    }
+    .menubtn{
+        padding-left: 15px; /* align each button with the a*/   
+        padding-right: 0px;
+        /* borders */
+        padding-top: 6px;
+        padding-bottom: 6px;
+        border-top: lightgray solid 1px;
+    }
+    .btn-content{
+        position: relative; /* disable the drop to be over the rest */
+        left: -20px;
+        margin-right: -20px;
+    }
+    .btn-content > div {
+        border-bottom: lightgray solid 1px;
+    }
+    .content{
+        border-top: #cccccc 1px;
+        border-bottom: #cccccc 1px;
+    }
+    .btn i{
+        border: solid black;
+        border-width: 0 2px 2px 0;
+    }
+}
+
+@media (max-width:305px){
+}
